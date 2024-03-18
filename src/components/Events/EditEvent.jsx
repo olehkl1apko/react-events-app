@@ -14,6 +14,7 @@ export default function EditEvent() {
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["events", params.id],
     queryFn: ({ signal }) => fetchEvent({ signal, id: params.id }),
+    staleTime: 10_000,
   });
 
   const { mutate } = useMutation({
