@@ -1,7 +1,13 @@
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
-export async function fetchEvents() {
-  const response = await fetch(BACKEND_URL + "/events");
+export async function fetchEvents({ signal, searchTerm }) {
+  let url = BACKEND_URL + "/events";
+
+  if (searchTerm) {
+    url += "?search=" + searchTerm;
+  }
+
+  const response = await fetch(url, { signal: signal });
 
   if (!response.ok) {
     const error = new Error("An error occurred while fetching the events");
