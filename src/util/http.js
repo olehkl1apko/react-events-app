@@ -1,3 +1,6 @@
+import { QueryClient } from "@tanstack/react-query";
+
+export const queryClient = new QueryClient();
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export async function fetchEvents({ signal, searchTerm }) {
