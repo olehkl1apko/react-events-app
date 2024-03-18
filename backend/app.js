@@ -81,8 +81,6 @@ app.post("/events", async (req, res) => {
     return res.status(400).json({ message: "Event is required" });
   }
 
-  console.log(event);
-
   if (
     !event.title?.trim() ||
     !event.description?.trim() ||

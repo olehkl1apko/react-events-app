@@ -1,8 +1,9 @@
-# React + Vite
+# React Event - connect with amazing people, find a new passion, organize and join your events!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### The application requires a server which runs on port 5000.
+That's why you must:
+- copy the "backend" folder locally to disk;
+- go to the folder;
+- start the server locally using `npm start` in the terminal
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="/public/repoLogo.png">
